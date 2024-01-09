@@ -29,7 +29,7 @@ def create_pm10_all_df(df):
 
 # Load clean data
 all_df = pd.read_csv(
-    'https://raw.githubusercontent.com/azyd-byte/air_quality_dataset2/main/dashboard/main_data.csv')
+    'dashboard/main_data.csv')
 
 all_df.sort_values(by="date", inplace=True)
 all_df.reset_index(inplace=True)
