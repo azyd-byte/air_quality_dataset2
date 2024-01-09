@@ -12,7 +12,7 @@ def create_co_mean_all_df(df):
         "CO": "mean"
     }).reset_index()
     co_mean_all_df.rename(columns={
-        "TEMP": "temperatur"
+        "CO": "mean"
     }, inplace=True)
     return co_mean_all_df
 
@@ -41,7 +41,8 @@ min_date = all_df["date"].min()
 
 with st.sidebar:
     # menambahkan logo
-    st.image('dashboard/dashboard.jpg')
+    st.image(
+        'https://github.com/azyd-byte/air_quality_dataset2/blob/main/dashboard/dashboard.jpg')
 
     # mengambil start_date dan end_date dari date_input
     start_date, end_date = st.date_input(
