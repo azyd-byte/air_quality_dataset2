@@ -12,7 +12,7 @@ def create_co_mean_all_df(df):
         "CO": "mean"
     }).reset_index()
     co_mean_all_df.rename(columns={
-        "CO": "mean"
+        "CO": "Carbon Monoxide"
     }, inplace=True)
     return co_mean_all_df
 
