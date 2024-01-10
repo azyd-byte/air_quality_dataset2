@@ -42,7 +42,7 @@ min_date = all_df["date"].min()
 with st.sidebar:
     # menambahkan logo
     st.image(
-        'https://github.com/azyd-byte/air_quality_dataset2/blob/main/dashboard.jpg')
+        'https://github.com/azyd-byte/air_quality_dataset2/blob/main/dashboard.jpg?raw=true')
 
     # mengambil start_date dan end_date dari date_input
     start_date, end_date = st.date_input(
