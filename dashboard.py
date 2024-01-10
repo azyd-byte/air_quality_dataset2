@@ -29,7 +29,7 @@ def create_pm10_all_df(df):
 
 # Load clean data
 all_df = pd.read_csv(
-    'main_data.csv')
+    'https://raw.githubusercontent.com/azyd-byte/air_quality_dataset2/main/main_data.csv')
 
 all_df.sort_values(by="date", inplace=True)
 all_df.reset_index(inplace=True)
@@ -42,7 +42,7 @@ min_date = all_df["date"].min()
 with st.sidebar:
     # menambahkan logo
     st.image(
-        'dashboard.jpg')
+        'https://github.com/azyd-byte/air_quality_dataset2/blob/main/dashboard.jpg')
 
     # mengambil start_date dan end_date dari date_input
     start_date, end_date = st.date_input(
